@@ -7,6 +7,7 @@ module.exports = {
 			},
 			colors: {
 				black: '#212121',
+				"cactus-gray": 'rgba(33, 33, 33, 0.48);',
 				'light-white': '#ffffff',
 				'cactus-brown': '#B38B59'
 			},

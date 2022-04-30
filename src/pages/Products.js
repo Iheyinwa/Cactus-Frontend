@@ -1,25 +1,25 @@
 import React from 'react';
 import Footer from '../components/Footer';
-import HomeHeader from '../components/HomeHeader';
+// import HomeHeader from '../components/HomeHeader';
 import HomeNav from '../components/HomeNav';
 import HomeSubCard from '../components/HomeSubCard';
 import ReviewHeader from '../components/ReviewHeader';
 import Service from '../components/Service';
-import productsPhoto from '../img/products header.jpg';
+// import productsPhoto from '../img/products header.jpg';
 
 const Products = () => {
 	return (
 		<div className="mx-12 mt-4 font-TT Commons">
 			<HomeNav />
 			<div className="my-12">
-				<HomeHeader
+				{/* <HomeHeader
 					photo={productsPhoto}
 					text1="Subscription"
 					text2="plan one."
 					paragraph1="Subscribe to any of our job insurance plans and"
 					paragraph2="get paid when you lose your job. Get started with a"
 					paragraph3="Cactus subscription today. It’s absolutely free."
-				/>
+				/> */}
 			</div>
 			<div className="mt-[30rem]">
 				<ReviewHeader text1="Benefits of this Plan" className="text-center" />

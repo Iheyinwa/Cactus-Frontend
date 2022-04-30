@@ -14,7 +14,7 @@ const Login = ({ setSuccessMsg, setErrorMsg }) => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    const getUser = localStorage.getItem("cactusUser");
+    const getUser = localStorage.getItem("cactus_token");
     if (getUser) {
       navigate("/dashboard");
     }
