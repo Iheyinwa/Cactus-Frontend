@@ -1,6 +1,6 @@
 export default function ContactCard() {
 	return (
-		<div className="rounded-2xl p-8 bg-[#f2f2f2] w-[45%] mx-auto backdrop-blur-xl relative bottom-[61.7rem]">
+		<div className=" text-white rounded-2xl p-8 border-[3px] border-solid bg-opacity-75 backdrop-filter backdrop-blur-xl border-[#bab5b2] w-[45%] bg-[#bab5b2] text-white mx-auto relative bottom-[61.7rem]">
 			<form>
 				<label for="fname">Full Name</label>
 				<input
@@ -8,7 +8,7 @@ export default function ContactCard() {
 					id="fname"
 					name="fullname"
 					placeholder="Akinde Adeolu"
-					className="box-border w-full border rounded-xl p-[10px] mt-4 mb-4 resize-y"
+					className="box-border w-full border rounded-xl p-[10px] mt-4 mb-4 resize-y bg-opacity-75 backdrop-filter backdrop-blur-xl bg-[#bab5b2] border-[#bab5b2]"
 				/>
 
 				<label for="email">Email Account</label>
@@ -17,7 +17,7 @@ export default function ContactCard() {
 					id="email"
 					name="email"
 					placeholder="klausigner@gmail.com"
-					className="box-border w-full border rounded-xl p-[10px] mt-4 mb-4 resize-y"
+					className="box-border w-full border rounded-xl p-[10px] mt-4 mb-4 resize-y bg-opacity-75 backdrop-filter backdrop-blur-xl bg-[#bab5b2] border-[#bab5b2]"
 				/>
 
 				<label for="number">Phone Number</label>
@@ -26,14 +26,14 @@ export default function ContactCard() {
 					id="number"
 					name="number"
 					placeholder="+2348132302448"
-					className="box-border w-full border rounded-xl p-[10px] mt-4 mb-4 resize-y"
+					className="box-border w-full border rounded-xl p-[10px] mt-4 mb-4 resize-y bg-opacity-75 backdrop-filter backdrop-blur-xl bg-[#bab5b2] border-[#bab5b2]"
 				/>
 
 				<label for="reason">Reason For Contacting Us</label>
 				<select
 					id="reason"
 					name="reason"
-					className="box-border w-full border p-[10px] rounded-xl mt-4 mb-4 resize-y"
+					className="box-border w-full border p-[10px] rounded-xl mt-4 mb-4 resize-y bg-opacity-75 backdrop-filter backdrop-blur-xl bg-[#bab5b2] border-[#bab5b2]"
 				>
 					<option value="complaints">Complaints</option>
 					<option value="feedback">Feedback</option>
@@ -44,7 +44,7 @@ export default function ContactCard() {
 					id="message"
 					name="message"
 					placeholder="Tell us what's wrong.."
-					className="h-[200px] box-border w-full border p-[10px] rounded-xl mt-4 mb-4 resize-y"
+					className="h-[200px] box-border w-full border p-[10px] rounded-xl mt-4 mb-4 resize-y bg-opacity-75 backdrop-filter backdrop-blur-xl bg-[#bab5b2] border-[#bab5b2]"
 				/>
 
 				<input

@@ -4,7 +4,7 @@ import whyUs from '../img/WhyUs.jpg';
 
 export default function WhyUs() {
 	return (
-		<section className="flex items-start justify-between mt-32">
+		<section className="flex items-start justify-between -mt-[12rem]">
 			<div>
 				<h3 className="font-semibold text-4xl w-full text-[#B38B59]">
 					Why is cactus one of the best<br /> job insurance solutions?
@@ -22,33 +22,31 @@ export default function WhyUs() {
 					</div>
 				</div>
 			</div>
-			<div className="w-1/2">
+			<div className="w-1/2 text-[#b9b9b9]">
 				<p className="font-medium text-sm">
-					Cactus remains on of the most preferred solutions for job insurance by<br />
+					Cactus remains one of the most preferred solutions for job insurance by<br />
 					Nigerian employees. One of the things that makes us trustworthy are our<br />
 					core values, stability, resilience, safety and security.
 				</p>
-				<ul className="mt-36">
+				<ul className="mt-32">
 					<WhyUsList
 						icon={<Stability />}
 						header={'Stability'}
-						text="Cactus remains on of the most preferred solutions for job insurance by
-					Nigerian employees. One of the things that makes us trustworthy are our
-					core values, stability, resilience, safety and security."
+						text="Here at Cactus, we ensure that our users are financially stable 
+						even when unemployed."
 					/>
 					<WhyUsList
 						icon={<Resilience />}
 						header={'Resilience'}
-						text="Cactus remains on of the most preferred solutions for job insurance by
-					Nigerian employees. One of the things that makes us trustworthy are our
-					core values, stability, resilience, safety and security."
+						text="We give our end users the strength 
+						to be resilient while seeking out new employment 
+						with our subscription plans."
 					/>
 					<WhyUsList
 						icon={<Security />}
 						header={'Safety and security'}
-						text="Cactus remains on of the most preferred solutions for job insurance by
-					Nigerian employees. One of the things that makes us trustworthy are our
-					core values, stability, resilience, safety and security."
+						text="Overall, our subscription plans make our users 
+						feel some degree of safety and security even in unstable economy."
 					/>
 				</ul>
 			</div>

@@ -119,6 +119,10 @@ abbr[title] {
 .g-flex {
     display: flex;
 }
+.cardbg{
+    background-image: url('./assets/cardframe.png');
+    background-position: contain;
+}
 
 @media screen and (max-width: 1080px){
     .g-flex {

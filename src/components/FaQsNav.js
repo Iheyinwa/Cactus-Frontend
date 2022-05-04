@@ -1,22 +1,25 @@
 import { Link } from 'react-router-dom';
-import { WhiteCactus, WhiteLogo } from '../svg/icons';
+import { WhiteCactus, WhiteDropdown, WhiteLogo } from '../svg/icons';
 import List from './HomeNavList';
 
-export default function FaQsNav({ text1, text2 }) {
+export default function FaQsNav({ text1, text2, onClick }) {
 	return (
 		<header>
-			<nav className="flex justify-between text-white-400/64 items-center text-sm relative mx-12 bottom-[35.8rem]">
+			<nav className="flex justify-between items-center text-sm relative mx-12 bottom-[35.8rem]">
 				<div className="flex w-24 space-x-1 items-center">
 					<WhiteLogo />
 					<WhiteCactus />
 				</div>
-				<ul className="flex p-0">
+				<ul className="flex p-0 text-[#c8c9ca]">
 					<Link to="/">
-						<List title="Home" className={`${window.location.pathname === '/' ? 'bgg' : ''}`} />
+						<List title="Home" />
 					</Link>
-					<Link to="/products">
+					<div onClick={onClick} className="flex">
 						<List title="Our Products" />
-					</Link>
+						<div className="relative top-[8px] right-[25px]">
+							<WhiteDropdown />
+						</div>
+					</div>
 					<Link to="/faqs">
 						<List title="FaQs" />
 					</Link>
@@ -31,7 +34,7 @@ export default function FaQsNav({ text1, text2 }) {
 					</Link>
 				</ul>
 				<Link to="/register">
-					<button className="w-48 h-10 border-solid bg-gray-100 backdrop-blur-xl rounded-lg p-2">
+					<button className="w-48 h-10 border-solid bg-[#C8C9CA] text-white rounded-lg p-2 bg-opacity-60 backdrop-filter backdrop-blur-lg">
 						Register
 					</button>
 				</Link>

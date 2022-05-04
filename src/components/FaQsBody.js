@@ -1,5 +1,5 @@
-import List from '../components/HomeNavList';
-import ReviewHeader from '../components/ReviewHeader';
+import List from './HomeNavList';
+import ReviewHeader from './ReviewHeader';
 import FaQsMore from './FaQsMore';
 
 export default function FaQsBody() {
