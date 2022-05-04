@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { AiOutlineCheck, AiOutlineClose } from "react-icons/ai";
+// import { AiOutlineCheck, AiOutlineClose } from "react-icons/ai";
 import {
   Button,
   useDisclosure,
@@ -71,7 +71,7 @@ const Plans = () => {
               </div>
             </header>
             <div className="flex flex-col mt-10 mx-5 space-y-5 md:space-y-0 md:flex-row md:space-x-5 md:mx-0 justify-between">
-              <div className="flex-1x">
+              <div className="flex-1x hover:lg:w-custom hover:mb-10 hover:lg:px-4 hover:py-10 hover:text-center">
                 <div className="bg-white p-10 rounded-lg shadow-lg">
                   <div className="flex justify-between items-center">
                     <div>
@@ -90,26 +90,71 @@ const Plans = () => {
                   <div className="mt-10">
                     <ul className="space-y-4">
                       <li className="flex items-center">
-                        <div className="">
-                          <AiOutlineCheck size="1.5em" />
+                        <div className="bg-[#30D158] rounded-full p-1">
+                          {/* <AiOutlineCheck size="1.5em" /> */}
+                          <svg
+                                  className="flex-shrink-0 h-4 w-4 text-white"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  fill="none"
+                                  viewBox="0 0 24 24"
+                                  stroke="currentColor"
+                                  aria-hidden="true"
+                                >
+                                <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M5 13l4 4L19 7"
+                                />
+                            </svg>
                         </div>
-                        <span className="ml-3 text-xl text-gray-900">
+                        <span className="ml-3 text-base font-medium text-gray-900">
                           Get paid 40% of your salary in the event of a job loss
                         </span>
                       </li>
                       <li className="flex items-center">
-                        <div className=" ">
-                          <AiOutlineCheck size="1.5em" />
+                        <div className=" bg-[#c4c4c4] rounded-full p-1">
+                          {/* <AiOutlineCheck size="1.5em" /> */}
+                          <svg
+                                  className="flex-shrink-0 h-4 w-4 text-white"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  fill="none"
+                                  viewBox="0 0 24 24"
+                                  stroke="currentColor"
+                                  aria-hidden="true"
+                                >
+                                <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M5 13l4 4L19 7"
+                                />
+                            </svg>
                         </div>
-                        <span className="ml-3 text-xl text-gray-900">
+                        <span className="ml-3 text-base text-gray-900">
                           View job vacancies
                         </span>
                       </li>
                       <li className="flex items-center">
-                        <div className="">
-                          <AiOutlineCheck size="1.5em" />
+                        <div className="bg-[#c4c4c4] rounded-full p-1">
+                          {/* <AiOutlineCheck size="1.5em" /> */}
+                          <svg
+                                  className="flex-shrink-0 h-4 w-4 text-white"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  fill="none"
+                                  viewBox="0 0 24 24"
+                                  stroke="currentColor"
+                                  aria-hidden="true"
+                                >
+                                <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M5 13l4 4L19 7"
+                                />
+                            </svg>
                         </div>
-                        <span className="ml-3 text-xl text-gray-900">
+                        <span className="ml-3 text-base text-gray-900">
                           Hiring companies see your resume
                         </span>
                       </li>
@@ -131,7 +176,7 @@ const Plans = () => {
                 </div>
               </div>
 
-              <div className="flex-1x">
+              <div className="flex-1x hover:lg:w-custom hover:mb-10 hover:lg:px-4 hover:py-10 hover:text-center">
                 <div className="bg-white p-10 rounded-lg shadow-lg">
                   <div className="flex justify-between items-center">
                     <div>
@@ -150,26 +195,71 @@ const Plans = () => {
                   <div className="mt-10">
                     <ul className="space-y-4">
                       <li className="flex items-center">
-                        <div className="">
-                          <AiOutlineCheck size="1.5em" />
+                        <div className="bg-[#30D158] rounded-full p-1">
+                          {/* <AiOutlineCheck size="1.5em" /> */}
+                          <svg
+                            className="flex-shrink-0 h-4 w-4 text-white"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                            aria-hidden="true"
+                          >
+                           <path
+                           stroke-linecap="round"
+                           stroke-linejoin="round"
+                           stroke-width="2"
+                           d="M5 13l4 4L19 7"
+                          />
+                       </svg>
                         </div>
-                        <span className="ml-3 text-xl text-gray-900">
+                        <span className="ml-3 text-base font-medium text-gray-900">
                           Get paid 50% of your salary in the event of a job loss
                         </span>
                       </li>
                       <li className="flex items-center">
-                        <div className="">
-                          <AiOutlineCheck size="1.5em" />
+                        <div className="bg-[#30D158] rounded-full p-1">
+                          {/* <AiOutlineCheck size="1.5em" className="bg-white" /> */}
+                          <svg
+                            className="flex-shrink-0 h-4 w-4 text-white"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                            aria-hidden="true"
+                          >
+                            <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M5 13l4 4L19 7"
+                            />
+                          </svg>
                         </div>
-                        <span className="ml-3 text-xl text-gray-900">
+                        <span className="ml-3 text-base font-medium text-gray-900">
                           View job vacancies
                         </span>
                       </li>
                       <li className="flex items-center">
-                        <div className="rounded-full p-1">
-                          <AiOutlineClose size="1.5em" />
+                        <div className="bg-[#c4c4c4] rounded-full p-1">
+                          {/* <AiOutlineClose size="1.5em" /> */}
+                              <svg
+                                  className="flex-shrink-0 h-4 w-4 text-white"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  fill="none"
+                                  viewBox="0 0 24 24"
+                                  stroke="currentColor"
+                                  aria-hidden="true"
+                                >
+                                <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M5 13l4 4L19 7"
+                                />
+                            </svg>
                         </div>
-                        <span className="ml-3 text-xl text-gray-900">
+                        <span className="ml-3 text-base text-gray-900">
                           Hiring Companies see your resume
                         </span>
                       </li>
@@ -191,7 +281,7 @@ const Plans = () => {
                 </div>
               </div>
 
-              <div className="flex-1x">
+              <div className="flex-1x hover:lg:w-custom hover:mb-10 hover:lg:px-4 hover:py-10 hover:text-center">
                 <div className="bg-white p-10 rounded-lg shadow-lg">
                   <div className="flex justify-between items-center">
                     <div>
@@ -210,26 +300,71 @@ const Plans = () => {
                   <div className="mt-10">
                     <ul className="space-y-4">
                       <li className="flex items-center">
-                        <div className=" ">
-                          <AiOutlineCheck size="1.5em" />
+                        <div className="bg-[#30D158] rounded-full p-1">
+                          {/* <AiOutlineCheck size="1.5em" /> */}
+                          <svg
+                                  className="flex-shrink-0 h-4 w-4 text-white"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  fill="none"
+                                  viewBox="0 0 24 24"
+                                  stroke="currentColor"
+                                  aria-hidden="true"
+                                >
+                                <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M5 13l4 4L19 7"
+                                />
+                            </svg>
                         </div>
-                        <span className="ml-3 text-xl text-gray-900">
+                        <span className="ml-3 text-base font-medium text-gray-900">
                           Get paid 65% of your salary in the event of a job loss
                         </span>
                       </li>
                       <li className="flex items-center">
-                        <div className=" ">
-                          <AiOutlineClose size="1.5em" />
+                        <div className=" bg-[#30D158] rounded-full p-1">
+                          {/* <AiOutlineClose size="1.5em" /> */}
+                          <svg
+                                  className="flex-shrink-0 h-4 w-4 text-white"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  fill="none"
+                                  viewBox="0 0 24 24"
+                                  stroke="currentColor"
+                                  aria-hidden="true"
+                                >
+                                <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M5 13l4 4L19 7"
+                                />
+                            </svg>
                         </div>
-                        <span className="ml-3 text-xl text-gray-900">
+                        <span className="ml-3 text-base font-medium text-gray-900">
                           View job vacancies
                         </span>
                       </li>
                       <li className="flex items-center">
-                        <div className="">
-                          <AiOutlineClose size="1.5em" />
+                        <div className="bg-[#30D158] rounded-full p-1">
+                          {/* <AiOutlineClose size="1.5em" /> */}
+                          <svg
+                                  className="flex-shrink-0 h-4 w-4 text-white"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  fill="none"
+                                  viewBox="0 0 24 24"
+                                  stroke="currentColor"
+                                  aria-hidden="true"
+                                >
+                                <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M5 13l4 4L19 7"
+                                />
+                            </svg>
                         </div>
-                        <span className="ml-3 text-xl text-gray-900">
+                        <span className="ml-3 text-base font-medium text-gray-900">
                           Hiring Companies see your resume
                         </span>
                       </li>
