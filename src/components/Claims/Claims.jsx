@@ -65,20 +65,23 @@ export default function Claims({ setSuccessMsg, setErrorMsg }) {
           .email("Invalid email"),
       })}
       onSubmit={async (values, actions) => {
-        console.log(values);
+      
+        const data = {
+          ...values
+        }
         try {
-          const response = await axios.post(CLAIM_URL, values, {
+          const response = await axios.post(CLAIM_URL, data, {
             headers: { "Content-Type": "application/json",
           "auth-token": token, },
           });
-
-          console.log(response.data);
+          console.log(response.data)
           setSuccessMsg(
             "Claim submitted successfully!"
           );
           setTimeout(() => {
             setSuccessMsg("");
           }, 7000);
+
         } catch (error) {
           if (error.response) {
             setErrorMsg(error.response.data);
@@ -134,17 +137,12 @@ export default function Claims({ setSuccessMsg, setErrorMsg }) {
                 
 
           <div className="pt-5 w-full flex justify-center" >
-            <Button
-            width="70%"
-            type="submit"
-            variant="solid"
-            color="#ffffff"
-            bg="brand.100"
-            _hover={{ bg: 'brand.300' }}
+            <div className="w-[80%] py-2 rounded flex items-center justify-center text-white bg-cactus-brown mr-[10px] text-base text-bold cursor-pointer"
+            
             onClick={()=>{setFormSwitch({page1: false, page2: true})}}
           >
             Next
-          </Button>
+          </div>
           </div>
         </div>
 
@@ -192,25 +190,22 @@ export default function Claims({ setSuccessMsg, setErrorMsg }) {
                 
 
           <div className="pt-5 w-full flex">
-            <Button
-            width="20%"
-            variant="solid"
-            color="#ffffff"
-            bg="brand.100"
-            _hover={{ bg: 'brand.300' }}
-            mr="10px"
+            <div className="w-[20%] py-2 rounded flex items-center justify-center text-white bg-cactus-brown mr-[10px] text-base text-bold cursor-pointer"
+            
             onClick={()=>{setFormSwitch({page1: true, page2: false})}}
           >
             Back
-          </Button>
+          </div>
+          
           <Button
-            isLoading={false}
             width="80%"
             type="submit"
-             _hover={{ bg: 'brand.300' }}
+             _hover={{ bg: 'brand.100', color: '#ffffff' }}
             variant="solid"
-            color="#ffffff"
-            bg="brand.100"
+            color="brand.100"
+            bg="#ffffff"
+            border='2px'
+            borderColor="brand.100"
           >
             Make Claim
           </Button>

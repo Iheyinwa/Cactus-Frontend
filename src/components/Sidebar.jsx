@@ -151,8 +151,8 @@ export default function Sidebar ( { open, setOpen } )
                         </li>
                     </Link>
 
-                    <div className="logout">
-                <button className="flex rounded-md p-2 cursor-pointer hover:bg-cactus-brown hover:text-white text-black text-sm items-center gap-x-4 mt-5 logout" onClick={handleLogout} >
+                    <div className="pt-14 logout">
+                <button className="flex rounded-md p-2 cursor-pointer hover:bg-cactus-brown hover:text-white text-black text-sm items-center gap-x-4 mt-9 logout" onClick={handleLogout} >
                     <BiLogOut className={ `cursor-pointer duration-500` } size='20' /> <span className={ `${ !open && "hidden" } origin-left duration-200 text-base` }>
                         Logout
                 </span>
