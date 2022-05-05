@@ -1,7 +1,6 @@
 import React from 'react';
 import transgreen from  "../assets/Trans-green.png";
 import transred from "../assets/Trans-red.png";
-import mastercard from "../assets/Mastercard.png"
 
 export default function MyWallet() {
   return (
@@ -28,7 +27,7 @@ export default function MyWallet() {
               </div>
               <button className="bg-cactus-brown text-white text-center px-20 mt-8 py-2 rounded-lg">Withdraw</button>
             </div>
-            <div className='border border-cactus-brown border h-40 '></div>
+            <div className='border border-cactus-brown h-40 '></div>
             <div className='flex flex-col items-center justify-between w-[50%]'>
               <div className="flex gap-3">
                 <img src={ transgreen } className='h-8' alt='green' />
