@@ -9,12 +9,12 @@ import Service from '../components/Service';
 import WhyUs from '../components/WhyUs';
 
 const Home = () => {
-	const [ state, setState ] = useState(false);
-	const onClick = () => setState(!state);
+	const [ State, setState ] = useState(false);
+	const onClick = () => setState(!State);
 	return (
 		<div className="mx-12 w-auto mt-4 font-TT Commons">
 			<HomeNav onClick={onClick} />
-			{state && <Productmenu />}
+			{State && <Productmenu />}
 			<Partners />
 			<WhyUs />
 			<HomeSub />
